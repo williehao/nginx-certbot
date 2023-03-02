@@ -1,2 +1,3 @@
 # nginx-certbot
-nginx with certbot for the automation updating CA key
+nginx-certbot
+Automatically create and renew SSL certificates with Certbot and Nginx using the Let's Encrypt free certificate authority. 
