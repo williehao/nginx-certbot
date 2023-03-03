@@ -6,7 +6,7 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 ## Usage
 ### Before you start with IPV6(or IPV4)
 Please check your environment has already have:     
-   1. Domail name EX: www.google.com
+   1. Domain name EX: www.google.com
    2. IPV6 address 
    3. 80 Port (for Let's Encrypt chcking your Domain name )
    4. Docker 
@@ -17,4 +17,5 @@ Please check your environment has already have:
    2. IPV6 address is already (EX:ifconfig)
 ![image](https://user-images.githubusercontent.com/15116422/222400801-9485e9ab-2824-4790-aa92-d6cfbf9aa4b6.png)
    3. 80 port check (EX: telnet www.google.com 80)   
-![image](https://user-images.githubusercontent.com/15116422/222609799-cc613827-3b35-45e1-b9a9-62d306d707fa.png
+![image](https://user-images.githubusercontent.com/15116422/222610114-5e755013-946f-4cea-ba1e-d7ba30c69eb1.png)
+
