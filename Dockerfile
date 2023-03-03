@@ -7,7 +7,7 @@ MAINTAINER Willie Cheng  (williehao@gmail.com)
 # install nginx
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install -y nginx iputils-ping net-tools
+RUN apt-get install -y nginx iputils-ping net-tools cron 
 
 # install certbot 
 RUN apt-get update -y
