@@ -46,6 +46,7 @@ docker run -itd --name test  --network=host  \
 -v"${PWD}"/:/etc/letsencrypt/ \
 williehao:nginx-cert:V20.04
 
+PS: don't use "--rm" if you want to auto update CA key
 ```
 
 #### How to check more messages
