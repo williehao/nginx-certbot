@@ -41,11 +41,17 @@ docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/c
 #### How to check more messages
 you can check log file from crontab.log or /var/log/letsencrypt/letsencrypt.log, it will be give you very more detail messages 
 
-### You will get the CA key
+### You will get the CA key 
 ![image](https://user-images.githubusercontent.com/15116422/223026211-7ca19c6b-7a62-4559-9412-b835075b4db1.png)
-
 ```shell
+### in the container
 ls /etc/letsencrypt/live/***.***.com/
+```
+
+![image](https://user-images.githubusercontent.com/15116422/223027249-b51220ad-f2f0-417b-bdee-67d0d5935a32.png)
+```shell
+### in the Docker environment
+liv
 ```
 
 PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)
