@@ -40,7 +40,11 @@ Please check your environment has already have:
 ### Running Nginx-Certbot-Docker
 ![image](https://user-images.githubusercontent.com/15116422/223012315-9b8c2ac3-299e-4d2a-b755-cfdeb9cbaf6e.png)
 ```shell
-docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob   williehao:nginx-cert:V20.04
+docker run -itd --name test  --network=host  \
+-v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf \
+-v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob \
+-v"${PWD}"/:/etc/letsencrypt/ \
+williehao:nginx-cert:V20.04
 
 ```
 
