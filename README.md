@@ -29,7 +29,8 @@ docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/c
 
 ```
 
-#### How to check the system is okay
+#### How to check the system is okay 
+
 
 
 
