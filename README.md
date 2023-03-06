@@ -6,16 +6,15 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 ## Step:1. Config your nginx.conf with own's Email and Domain name and then Runing 'docker run"
 docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob  -v"${PWD}"/:/etc/letsencrypt/  williehao:nginx-cert:V20.04
 
-## Step:2. Get a Key from your host direction
+## Step:2. Get a CA Key from your host direction
 ls *** (your domain name)
 
-## if you didn't see it please use "find" command line to find CA key
+## if you didn't see CA key please use "find" command line to find CA key location
 sudo find / -name fullchain.pem 
 
-## Step3: Combine CA key to another container which wants to use Https: (For example with Ant-Media-Server)
+## Step3: Combine CA key to another container(APP) which wants to use CA Key: (For example: Ant-Media-Server)
 Docker run  -v "${PWD}"/:/etc/letsencrypt/  *** 
 ```
-
 
 
 ## Usage
