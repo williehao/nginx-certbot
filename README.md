@@ -51,7 +51,7 @@ ls /etc/letsencrypt/live/***.***.com/
 ![image](https://user-images.githubusercontent.com/15116422/223027249-b51220ad-f2f0-417b-bdee-67d0d5935a32.png)
 ```shell
 ### in the Docker environment
-liv
+ls live
 ```
 
 PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)
