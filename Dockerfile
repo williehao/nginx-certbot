@@ -21,11 +21,11 @@ COPY nginx.sh /etc/nginx/nginx.sh
 RUN chmod 755 -R /etc/nginx/nginx.sh
 
 # give execution right on the cron job
-COPY cronjob /etc/cron.d/cronjob
-RUN chmod 0644 /etc/cron.d/cronjob && crontab /etc/cron.d/cronjob
+#COPY cronjob /etc/cron.d/cronjob
+#RUN chmod 0644 /etc/cron.d/cronjob && crontab /etc/cron.d/cronjob
 # apply cron job
-RUN crontab /etc/cron.d/cronjob
-RUN touch /var/log/cron.log
+#RUN crontab /etc/cron.d/cronjob
+#RUN touch /var/log/cron.log
 
 # expose ports
 EXPOSE 80
@@ -38,3 +38,4 @@ VOLUME ["/etc/letsencrypt"]
 
 #Dockerfile Command to start the cron and your own script and keep the container running
 CMD ["/bin/bash" ,"-c" ,"service cron start && bash nginx.sh && tail -f /dev/null"]
+
