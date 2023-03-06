@@ -5,6 +5,15 @@
 Automatically create and renew SSL certificates with Certbot and Nginx using the Let's Encrypt free certificate authority into the Docker environment. 
 
 ## Quick Start
+```shell
+## 1. Config your nginx.conf 
+docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob   williehao:nginx-cert:V20.04
+
+## 2. Get a Key from 
+
+```
+
+
 
 ## Usage
 ### Before you start with IPV6(or IPV4)
@@ -29,11 +38,14 @@ docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/c
 
 ```
 
-#### How to check the system is okay 
+#### How to check more messages
+you can check log file from crontab.log or /var/log/letsencrypt/letsencrypt.log, it will be give you very more detail messages 
 
+### You will get the CA key
+![image](https://user-images.githubusercontent.com/15116422/223026211-7ca19c6b-7a62-4559-9412-b835075b4db1.png)
 
-
-
-
+```shell
+ls /etc/letsencrypt/live/***.***.com/
+```
 
 PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)
