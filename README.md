@@ -48,7 +48,7 @@ docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/c
 you can check log file from crontab.log or /var/log/letsencrypt/letsencrypt.log, it will be give you very more detail messages 
 
 ### You will get the CA key 
-![image](https://user-images.githubusercontent.com/15116422/223026211-7ca19c6b-7a62-4559-9412-b835075b4db1.png)
+![image](https://user-images.githubusercontent.com/15116422/223049908-d384feb5-49dc-43f4-a602-c094a87c72d8.png)
 ```shell
 ### in the container
 ls /etc/letsencrypt/live/***.***.com/
