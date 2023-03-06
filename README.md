@@ -22,3 +22,17 @@ Please check your environment has already have:
    3. 80 port check (EX: telnet www.google.com 80)   
 ![image](https://user-images.githubusercontent.com/15116422/222610114-5e755013-946f-4cea-ba1e-d7ba30c69eb1.png)
 
+### Running Nginx-Certbot-Docker
+![image](https://user-images.githubusercontent.com/15116422/223012315-9b8c2ac3-299e-4d2a-b755-cfdeb9cbaf6e.png)
+```shell
+docker run -itd --name test  --network=host  -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob   williehao:nginx-cert:V20.04
+
+```
+
+#### How to checing system is okay
+
+
+
+
+
+PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)
