@@ -1,2 +1,4 @@
-# setup an autorun time by 30 mins
+## setup an autorun time by 30 mins
 */30 * * * * bash /etc/nginx/nginx.sh >> /etc/nginx/crontab.log 2>&1
+## for 8 days updte
+# 0 8 * * * bash /etc/nginx/nginx.sh >> /etc/nginx/crontab.log 2>&1
