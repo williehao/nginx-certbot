@@ -67,7 +67,9 @@ ls /etc/letsencrypt/live/***.***.com/
 ls live
 ```
 
-Troubleshooting 
+---
+
+## Troubleshooting   
 1.too many certificates (5) already issued for this exact set of domains in the last 168 hours
 
 [Reference](  https://letsencrypt.org/docs/duplicate-certificate-limit/)
