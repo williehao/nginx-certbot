@@ -70,14 +70,14 @@ ls live
 ---
 
 ## Troubleshooting   
-1.Q: too many certificates (5) already issued for this exact set of domains in the last 168 hours
-A: waiting for the time becuase this rate limit is exceeded when a subscriber requests a certificate for the same “exact set” of hostnames more than 5 times in a single week
-[Reference](  https://letsencrypt.org/docs/duplicate-certificate-limit/)
+1.Q: too many certificates (5) already issued for this exact set of domains in the last 168 hours    
+A: waiting for the time becuase this rate limit is exceeded when a subscriber requests a certificate for the same “exact set” of hostnames more than 5 times in a single week    
+[Reference](  https://letsencrypt.org/docs/duplicate-certificate-limit/)    
 
-2.Q: too many failed authorizations recently
-  A: Change Email address
-![image](https://user-images.githubusercontent.com/15116422/223331098-0f3e4ec3-0421-4d38-96d1-8c52e00dd1e6.png)
+2.Q: too many failed authorizations recently    
+  A: Change Email address    
+![image](https://user-images.githubusercontent.com/15116422/223331098-0f3e4ec3-0421-4d38-96d1-8c52e00dd1e6.png)    
 
 
 
-PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)
+PS: [Let’s Encrypt provides rate limits](https://letsencrypt.org/docs/rate-limits/)     
