@@ -6,7 +6,7 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 
 
 ## Example for combine CA key with Nginx-SSL key
-You can check my another content for how to use CA key with NGINX for SSL(HTTPS://)[https://github.com/williehao/AntMediaServer-Nginx/edit/main/README.md]
+[You can check my another content for how to use CA key with NGINX for SSL(HTTPS)](https://github.com/williehao/AntMediaServer-Nginx/edit/main/README.md)
 
 ## Quick Start
 ```shell
