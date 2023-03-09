@@ -1,7 +1,12 @@
 # Nginx-Certbot-Docker (Automation Multiple Create or Renew SSL)
 Automatically create and renew SSL certificates with Certbot and Nginx using the Let's Encrypt free certificate authority into the Docker environment. 
+## UML
 
 
+
+
+## Example for combine CA key with Nginx-SSL key
+You can check my another content for how to use CA key with NGINX for SSL(HTTPS://)[https://github.com/williehao/AntMediaServer-Nginx/edit/main/README.md]
 
 ## Quick Start
 ```shell
@@ -28,13 +33,13 @@ Docker run  -v "${PWD}"/:/etc/letsencrypt/  ***
 Please check your environment has already have:     
    1. Domain name EX: www.google.com
    2. IPV6 address 
-   3. 80 Port (for Let's Encrypt chcking your Domain name )
+   3. 80 Port (for Let's Encrypt checking your Domain name )
    4. Docker 
 
-#### How to check local environment
-   1. Domain name is okay (EX: ping6 www.google.com)   
+#### How to check the local environment
+   1. A Domain name is okay (EX: ping6 www.google.com)   
 ![image](https://user-images.githubusercontent.com/15116422/222399319-13ba7eac-3caa-45ed-b790-fd721e487379.png)
-   2. IPV6 address is already (EX:ifconfig)
+   2. An IPV6 address is already (EX:ifconfig)
 ![image](https://user-images.githubusercontent.com/15116422/222400801-9485e9ab-2824-4790-aa92-d6cfbf9aa4b6.png)
    3. 80 port check (EX: telnet www.google.com 80)   
 ![image](https://user-images.githubusercontent.com/15116422/222610114-5e755013-946f-4cea-ba1e-d7ba30c69eb1.png)
@@ -48,7 +53,7 @@ docker run -itd --name test  --network=host  \
 -v "${PWD}"/:/etc/letsencrypt/ \
 williehao/nginx-cert:V20.04
 
-PS: don't use "--rm" if you want to auto update CA key
+PS: don't use "--rm" if you want to auto-update CA key
 ```
 
 #### How to check more messages
