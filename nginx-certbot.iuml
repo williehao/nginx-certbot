@@ -1,3 +1,27 @@
 @startuml
-Bob -> Alice : hello
+
+!include <C4/C4_Container>
+left to right direction
+scale 2500 width
+
+
+System_Boundary(c1, "Nginx-Certbot") {
+    Container(Nginx_Certbot, "Container A", "Ubuntu 20.04 ,Nginx ,Certbot , crontab \
+    ", "Allows multiple create CA keys")
+}
+System_Boundary(c2, "Nginx-AMS") {
+    Container(Nginx_AMS, "Container B", "Nginx , Ant-Media-Server \
+    ", "Nginx-AMS with SSL(https)")
+}
+
+Rel(Nginx_Certbot, Folder,  "Save CA keys", "this step will save CA keys into folder")
+Rel(Folder ,Nginx_AMS ,  "Get CA keys", "this step will get CA keys into folder")
+
+
+folder "Folder" {
+  file "fullchain.pem" { 
+  }
+  file "privkey.pem" {
+  }
+}
 @enduml
