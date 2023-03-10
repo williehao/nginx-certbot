@@ -2,8 +2,17 @@
 Automatically create and renew SSL certificates with Certbot and Nginx using the Let's Encrypt free certificate authority into the Docker environment. 
 ## UML
 
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/williehao/nginx-certbot/main/nginx-certbot.iuml)
 
 
+
+```plantuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+   
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+```
 
 ## Example for combine CA key with Nginx-SSL key
 [You can check my another content for how to use CA key with NGINX for SSL(HTTPS)](https://github.com/williehao/AntMediaServer-Nginx/edit/main/README.md)
