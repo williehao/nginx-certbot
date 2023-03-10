@@ -3,13 +3,6 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 ## UML
 
 
-```mermaid
-sequenceDiagram
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-Alice -> Bob:Another authentication Response
-Bob --> Alice: Another authentication Response
-```
 
 
 ## Example for combine CA key with Nginx-SSL key
