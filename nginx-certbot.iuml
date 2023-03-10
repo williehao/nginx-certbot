@@ -15,8 +15,7 @@ System_Boundary(c2, "Nginx-AMS") {
 }
 
 Rel(Nginx_Certbot, Folder,  "Save CA keys", "this step will save CA keys into folder")
-Rel(Folder ,Nginx_AMS ,  "Get CA keys", "this step will get CA keys into folder")
-
+Rel(Nginx_AMS, Folder ,  "Get CA keys", "this step will get CA keys into folder")
 
 folder "Folder" {
   file "fullchain.pem" { 
