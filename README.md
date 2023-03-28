@@ -6,7 +6,7 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 
 
 
-## Example for combine CA key with Nginx-SSL key
+## Example for combining CA key with Nginx-SSL key
 [How to use CA key with NGINX for SSL(HTTPS)](https://github.com/williehao/AntMediaServer-Nginx/edit/main/README.md)
 
 ## Quick Start
@@ -31,7 +31,7 @@ Docker run  -v "${PWD}"/:/etc/letsencrypt/  ***
 
 ## Usage
 ### Before you start with IPV6(or IPV4)
-Please check your environment has already have:     
+Please check your environment has already had:     
    1. Domain name EX: www.google.com
    2. IPV6 address 
    3. 80 Port (for Let's Encrypt checking your Domain name )
@@ -58,7 +58,7 @@ PS: don't use "--rm" if you want to auto-update CA key
 ```
 
 #### How to check more messages
-you can check log file from crontab.log or /var/log/letsencrypt/letsencrypt.log, it will be give you very more detail messages 
+you can check log file from crontab.log or /var/log/letsencrypt/letsencrypt.log, which will give you very more detailed messages 
 
 ### You will get the CA key 
 ![image](https://user-images.githubusercontent.com/15116422/223049908-d384feb5-49dc-43f4-a602-c094a87c72d8.png)
@@ -77,7 +77,7 @@ ls live
 
 ## Troubleshooting   
 1.Q: too many certificates (5) already issued for this exact set of domains in the last 168 hours    
-A: waiting for the time becuase this rate limit is exceeded when a subscriber requests a certificate for the same “exact set” of hostnames more than 5 times in a single week    
+A: waiting for the time because this rate limit is exceeded when a subscriber requests a certificate for the same “exact set” of hostnames more than 5 times in a single week    
 [Reference](  https://letsencrypt.org/docs/duplicate-certificate-limit/)    
 
 2.Q: too many failed authorizations recently    
