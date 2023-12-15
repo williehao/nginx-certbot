@@ -13,7 +13,7 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 ## Quick Start
 ```shell
 
-## Step:0. Change nginx.conf url content to your domain name
+## Step:0. Change the nginx.conf content to your domain name
 
 ## Step:1. Config your nginx.conf with your Email and Domain name and then Running 'docker run"
 docker run -itd --name test  --network=host  \
