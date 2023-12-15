@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 ENV container docker
-ENV PATH /snap/bin:$PATH
-ADD snap /usr/local/bin/snap
+#ENV PATH /snap/bin:$PATH
+#ADD snap /usr/local/bin/snap
 MAINTAINER Willie Cheng  (williehao@gmail.com)
 
 # install nginx
