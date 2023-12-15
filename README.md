@@ -1,6 +1,7 @@
 # Nginx-Certbot-Docker (Automation Multiple Create or Renew SSL)
 Automatically create and renew SSL certificates with Certbot and Nginx using the Let's Encrypt free certificate authority into the Docker environment. 
 ## Diagram
+![image](https://github.com/williehao/nginx-certbot/assets/15116422/9f7bb244-8860-4993-b30e-7b747a0711c4)
 
 [![your-UML-diagram-name11](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/williehao/nginx-certbot/main/nginx-certbot.iuml)](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/williehao/nginx-certbot/main/nginx-certbot.iuml)
 
@@ -11,6 +12,9 @@ Automatically create and renew SSL certificates with Certbot and Nginx using the
 
 ## Quick Start
 ```shell
+
+## Step:0. Change nginx.conf url content to your domain name
+
 ## Step:1. Config your nginx.conf with your Email and Domain name and then Running 'docker run"
 docker run -itd --name test  --network=host  \
 -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf \
