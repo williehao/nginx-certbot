@@ -20,7 +20,7 @@ docker run -itd --name test  --network=host  \
 -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf \
 -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob \
 -v "${PWD}"/:/etc/letsencrypt/ \
-williehao/nginx-cert:V20.04
+williehao/nginx-cert:v20.04
 
 ## Step:2. Get a CA Key from your host's direction
 ls *** (your domain name)
@@ -56,7 +56,7 @@ docker run -itd --name test  --network=host  \
 -v "${PWD}"/nginx.conf:/etc/nginx/conf.d/nginx.conf \
 -v "${PWD}"/nginx.sh:/etc/nginx/nginx.sh -v "${PWD}"/cronjob:/etc/cron.d/cronjob \
 -v "${PWD}"/:/etc/letsencrypt/ \
-williehao/nginx-cert:V20.04
+williehao/nginx-cert:v20.04
 
 PS: don't use "--rm" if you want to auto-update CA key
 ```
